@@ -157,7 +157,7 @@ cargo run
        v
 [Rank Calculation] --> [Guesser Interface] --> [Guesser Implementation]
 ```
-## Detailed Breakdown
+## Algorithm Breakdown
 ### 1. Entropy Calculation
 Entropy is a crucial concept in information theory, representing the average amount of uncertainty or information content associated with a set of probabilities. In the context of this solver, entropy measures how unpredictable or uncertain the remaining possible solutions are.
 
