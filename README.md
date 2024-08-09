@@ -10,7 +10,7 @@ To run the application, you can use the compiled binary or run it directly using
 ```
 cargo run
 ```
-# Block Diagram
+## Block Diagram
 ```
 +-----------------------------------------------------+
 |                Command Line Interface (CLI)        |
@@ -108,7 +108,7 @@ cargo run
 |       scenarios                                    |
 +-----------------------------------------------------+
 ```
-# Data Flow Representation
+## Data Flow Representation
 ```
 [Dictionary File (`dictionary.txt`)] 
        |
