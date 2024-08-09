@@ -157,3 +157,25 @@ cargo run
        v
 [Rank Calculation] --> [Guesser Interface] --> [Guesser Implementation]
 ```
+## Detailed Breakdown
+### 1. Entropy Calculation
+Entropy is a crucial concept in information theory, representing the average amount of uncertainty or information content associated with a set of probabilities. In the context of this solver, entropy measures how unpredictable or uncertain the remaining possible solutions are.
+
+* Formula:
+  The entropy is calculated as:
+  ```
+  let remaining_entropy = -self
+    .remaining
+    .iter()
+    .map(|&(_, p, _)| {
+        let p = p / remaining_p;
+        p * p.log2()
+    })
+    .sum::<f64>();
+
+  ```
+where
+* p is the probability of a word.
+* remaining_p is the total probability of all remaining words.
+* p.log2() computes the log base 2 of p, which is used to measure the information content of each word.
+  
