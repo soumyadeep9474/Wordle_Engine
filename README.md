@@ -174,13 +174,13 @@ Entropy is a crucial concept in information theory, representing the average amo
     .sum::<f64>();
 
   ```
-where
-* p is the probability of a word.
-* remaining_p is the total probability of all remaining words.
-* p.log2() computes the log base 2 of p, which is used to measure the information content of each word.
-Explanation:
-* The term p * p.log2() represents the contribution to the entropy from a word with probability p. Higher probabilities contribute more to the entropy.
-* Summing over all remaining words gives the total entropy, which quantifies the uncertainty about the remaining words.
+  where
+  * p is the probability of a word.
+  * remaining_p is the total probability of all remaining words.
+  * p.log2() computes the log base 2 of p, which is used to measure the information content of each word.
+  Explanation:
+  * The term p * p.log2() represents the contribution to the entropy from a word with probability p. Higher probabilities contribute more to the entropy.
+  * Summing over all remaining words gives the total entropy, which quantifies the uncertainty about the remaining words.
 
 ### 2. Estimation of Remaining Steps
 The function est_steps_left estimates the number of guesses needed based on the current entropy. This estimation helps guide the guessing strategy by predicting how many more guesses might be required to solve the puzzle.
