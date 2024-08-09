@@ -1,4 +1,4 @@
-# Wordle Sovlver
+# Wordle Sovlver (Major League Hacking : Global Hack Week : Task)
 ## Building and Running the Application
 Building the Application
 To build the application in release mode, use the following command:
